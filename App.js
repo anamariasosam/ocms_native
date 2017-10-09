@@ -1,11 +1,16 @@
 import React from 'react';
+import { StackNavigator } from 'react-navigation';
 
-import Home from './src/screens/Home';
+import HomeScreen from './src/screens/Home';
+
+const OCMS = StackNavigator({
+  Home: { screen: HomeScreen }
+});
 
 export default class App extends React.Component {
   render() {
     return (
-      <Home />
+      <OCMS />
     );
   }
 }

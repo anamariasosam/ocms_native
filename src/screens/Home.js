@@ -1,23 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default class Home extends React.Component {
+export default class App extends Component {
+  static navigationOptions = {
+    title: 'Home 🏡',
+  };
+
   render() {
     return (
-      <View style={styles.container}>
-        <Text>Open up Home.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone todsafsdloper menu.</Text>
+      <View>
+        <Text>OCMS Project</Text>
       </View>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
