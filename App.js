@@ -1,10 +1,10 @@
 import React from 'react';
 import { StackNavigator } from 'react-navigation';
 
-import Home from './src/screens/Home';
+import Agenda from './src/screens/Agenda';
 
 const OCMS = StackNavigator({
-  Home: { screen: Home },
+  Agenda: { screen: Agenda },
 });
 
 const App = () => (
